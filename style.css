@@ -66,3 +66,49 @@ body {
 .content a:hover {
   background: #28c96c;
 }
+
+.team {
+  display: flex;
+  flex-direction: column;
+
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.individual {
+  display: flex;
+  border: solid 1px lightgrey;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px;
+}
+
+.about {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  flex-direction: column;
+  margin-top: 100px;
+
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.about h1 {
+  font-size: 40px;
+}
+
+.about p {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.individualTitle {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
