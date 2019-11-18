@@ -84,7 +84,7 @@ body {
   box-shadow: 1px 1px 5px;
 }
 
-.about {
+.about, .features {
   display: flex;
   margin: 0 auto;
   width: fit-content;
@@ -96,11 +96,15 @@ body {
   align-items: center;
 }
 
-.about h1 {
+.about h1, .features h1 {
   font-size: 40px;
 }
 
-.about p {
+.features h2 {
+  font-size: 30px;
+}
+
+.about p, .features p {
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 40px;
