@@ -5,8 +5,8 @@ https://refresh-app.netlify.com
  
 Contributors: 
 
-Michael Baynon Front End: https://github.com/MichaelBaynon
+Michael Baynon [Front End]: https://github.com/MichaelBaynon
 
-Daniel Wallen Front End: https://github.com/WebWallen
+Daniel Wallen [Front End]: https://github.com/WebWallen
 
-Taylor Watson UX: https://github.com/taylornicolewatson
+Taylor Watson [UX]: https://github.com/taylornicolewatson
