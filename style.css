@@ -40,8 +40,8 @@ a {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   /* width: fit-content; */
   justify-content: center;
   width: 80%;
@@ -52,8 +52,18 @@ a {
 
 .copy {
   min-width: 100%;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
 }
+
+.text {
+  width: 45%;
+}
+
+.image {
+  align-items: center;
+}
+
 
 .content h1 {
   margin-bottom: 1px;
