@@ -3,6 +3,7 @@ body {
   font-weight: 400;
   background: #3A3699;
   color: white;
+  line-height: 1.25;
 }
 
 .nav {
