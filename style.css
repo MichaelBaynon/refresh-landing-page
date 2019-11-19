@@ -89,6 +89,10 @@ a {
   transition: 0.4s;
 }
 
+.center {
+  margin: 40px auto;
+}
+
 .team {
   display: flex;
   flex-direction: column;
