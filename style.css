@@ -1,20 +1,25 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Catamaran;
   font-weight: 400;
+  background: #3A3699;
+  color: white;
+  line-height: 1.25;
+}
+
+p {
+  font-size: 16px;
 }
 
 .nav {
   padding: 40px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: center;
   align-items: center;
 }
 
-.nav-buttons a {
+.nav-buttons a, .get-started a {
   margin: 30px;
-  color: #666666;
   text-decoration: none;
   font-size: 18px;
   transition: 0.4s;
@@ -24,29 +29,53 @@ body {
   color: #28c96c;
 }
 
+.get-started:hover {
+  background: #28c96c;
+}
+
+a {
+  color: #28C96C;
+  text-decoration: none;
+}
+
 .refresh {
   font-size: 28px;
-  color: #333333;
   font-weight: 600;
 }
 
 .content {
+  /* display: flex;
+  flex-direction: column; */
+  /* width: fit-content; */
+  /* justify-content: center; */
+  width: 80%;
+  margin: 0 auto;
+  /* margin-left: 18.6%;
+  margin-top: 7%; */
+}
+
+.copy {
+  min-width: 100%;
   display: flex;
-  flex-direction: column;
-  width: fit-content;
-  margin-left: 18.6%;
-  margin-top: 7%;
+  justify-content: space-between;
+}
+
+.text {
+  width: 45%;
+}
+
+.image {
+  align-items: center;
 }
 
 .content h1 {
-  color: #333333;
   margin-bottom: 1px;
   font-weight: 600;
 }
 
 .get-started {
-  margin-top: 60px;
-  background: #525252;
+  margin-top: 20px;
+  background: #4088F0;
   width: fit-content;
   color: white;
   border-radius: 5px;
@@ -63,14 +92,13 @@ body {
   transition: 0.4s;
 }
 
-.content a:hover {
-  background: #28c96c;
+.center {
+  margin: 40px auto;
 }
 
 .team {
   display: flex;
   flex-direction: column;
-
   width: fit-content;
   margin: 0 auto;
 }
@@ -115,4 +143,60 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 1180px) {
+  body {
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 25px;
+    /* text-align: center; */
+  }
+  h2 {
+    text-align: center;
+  }
+  .intro {
+    text-align: center;
+  }
+  .copy {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .image {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .text {
+    min-width: 100%;
+    text-align: center;
+  }
+  .get-started {
+    font-size: 18px;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .nav-buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .nav-buttons a {
+    /* margin-bottom: 20px; */
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 575px) {
+    .nav-buttons a {
+      font-size: 12px;
+    }
+  }
 }
