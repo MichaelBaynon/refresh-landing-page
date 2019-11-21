@@ -1,9 +1,39 @@
 body {
   font-family: Catamaran;
   font-weight: 400;
-  background: #3A3699;
+  background: rgb(20, 20, 20);
   color: white;
   line-height: 1.25;
+  margin: 0;
+}
+
+* {
+  font-family: Catamaran;
+  font-weight: 400;
+}
+
+.intro {
+  padding: 10px;
+  margin: 10px;
+  /* border: solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: fit-content;
+  border-bottom: 2px solid white;
+  
+ 
+}
+
+
+
+.intro p {
+  /* border: solid red; */
+  display: flex;
+  width: 40%;
+  
 }
 
 p {
@@ -11,22 +41,24 @@ p {
 }
 
 .nav {
-  padding: 40px;
   display: flex;
   justify-content: space-between;
   align-content: center;
   align-items: center;
+  background-color: rgb(12, 12, 12);
 }
 
-.nav-buttons a, .get-started a {
+.nav-buttons a,
+.get-started a {
   margin: 30px;
   text-decoration: none;
   font-size: 18px;
   transition: 0.4s;
+  
 }
 
 .nav-buttons a:hover {
-  color: #28c96c;
+  color: #4088f0;
 }
 
 .get-started:hover {
@@ -34,12 +66,14 @@ p {
 }
 
 a {
-  color: #28C96C;
+  color: white;
   text-decoration: none;
+  
 }
 
 .refresh {
   font-size: 28px;
+  padding-left: 30px;
   font-weight: 600;
 }
 
@@ -50,22 +84,38 @@ a {
   /* justify-content: center; */
   width: 80%;
   margin: 0 auto;
+  
   /* margin-left: 18.6%;
   margin-top: 7%; */
 }
 
 .copy {
-  min-width: 100%;
+  border-bottom: 2px solid white;
+  width: fit-content;
+  margin:  0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  /* margin-bottom: 30px; */
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.copy img {
+  border-radius: 5px;
+  border: solid 1px black;
+  box-shadow: 1px 1px 5px black;
 }
 
 .text {
-  width: 45%;
+  /* width: 45%; */
+  margin-left: 80px;
 }
 
 .image {
   align-items: center;
+  
 }
 
 .content h1 {
@@ -75,7 +125,7 @@ a {
 
 .get-started {
   margin-top: 20px;
-  background: #4088F0;
+  background: #4088f0;
   width: fit-content;
   color: white;
   border-radius: 5px;
@@ -105,14 +155,21 @@ a {
 
 .individual {
   display: flex;
-  border: solid 1px lightgrey;
+  border: solid 1px black;
   margin: 20px;
   padding: 40px;
   border-radius: 5px;
-  box-shadow: 1px 1px 5px;
+  box-shadow: 1px 1px 5px black;
 }
 
-.about, .features {
+.individual img {
+  border-radius: 5px;
+  border: solid 1px black;
+  box-shadow: 1px 1px 5px black;
+}
+
+.about,
+.features {
   display: flex;
   margin: 0 auto;
   width: fit-content;
@@ -124,7 +181,8 @@ a {
   align-items: center;
 }
 
-.about h1, .features h1 {
+.about h1,
+.features h1 {
   font-size: 40px;
 }
 
@@ -132,7 +190,19 @@ a {
   font-size: 30px;
 }
 
-.about p, .features p {
+h2 {
+  
+  margin: 0 auto;
+  padding-top: 35px;
+  display: flex;
+  
+  width: fit-content;
+}
+
+
+
+.about p,
+.features p {
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 40px;
@@ -158,6 +228,12 @@ a {
   }
   .intro {
     text-align: center;
+ 
+  }
+
+  .intro p {
+    
+    width: 100%;
   }
   .copy {
     flex-direction: column;
@@ -172,6 +248,8 @@ a {
   .text {
     min-width: 100%;
     text-align: center;
+    margin: 0 auto;
+    width: fit-content;
   }
   .get-started {
     font-size: 18px;
@@ -185,6 +263,7 @@ a {
     flex-direction: column;
     max-width: 100%;
   }
+  
   .nav-buttons {
     display: flex;
     justify-content: space-evenly;
@@ -193,6 +272,10 @@ a {
     /* margin-bottom: 20px; */
     max-width: 100%;
   }
+  .intro p {
+    
+  }
+  
 
   .individual {
     display: flex;
@@ -206,7 +289,9 @@ a {
 
   @media screen and (max-width: 575px) {
     .nav-buttons a {
-      font-size: 12px;
+      font-size: 18px;
     }
+
+ 
   }
 }
