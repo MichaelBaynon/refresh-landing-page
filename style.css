@@ -194,6 +194,16 @@ a {
     max-width: 100%;
   }
 
+  .individual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .photo {
+    margin-left: 30px;
+  }
+
   @media screen and (max-width: 575px) {
     .nav-buttons a {
       font-size: 12px;
