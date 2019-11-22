@@ -27,10 +27,7 @@ body {
  
 }
 
-
-
 .intro p {
-  /* border: solid red; */
   display: flex;
   width: 40%;
   
@@ -187,8 +184,6 @@ h2 {
   
   width: fit-content;
 }
-
-
 
 .about p,
 .features p {
