@@ -39,6 +39,7 @@ body {
 
 .vector {
     width: 100%;
+    z-index: -1;
 }
 
 .images {
@@ -56,3 +57,31 @@ body {
     left: 602px;
     top: 182px;
 } 
+
+.text {
+    color: white;
+    top: 120px;
+    left: 160px;
+    position: absolute;
+}
+
+.description {
+    width: 40%;
+    line-height: 28px;
+    align-items: center;
+    letter-spacing: 0.04em;
+}
+
+.download {
+    width: 103px;
+    height: 37px;
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.035em;
+    background: #E05CB3;
+    color: white;
+    margin-top: 10px;
+}
