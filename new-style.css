@@ -1,1 +1,58 @@
 /* This will replace style.css after I get it to match UX */
+
+body {
+    font-family: Catamaran;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.top {
+    /* background: linear-gradient(90deg, #4742BC 0%, #E05CB3 81.77%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    width: 1440px;
+    height: 584px;
+    left: 0px;
+    top: 0px; */
+}
+
+.nav {
+    background: #4742BC;
+    width: 100%;
+    height: 86px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+}
+
+.vector {
+    width: 100%;
+}
+
+.images {
+    position: relative;
+}
+
+.mobile {
+    position: absolute;
+    left: 925px;
+    top: 76px;
+} 
+
+.desktop {
+    position: absolute;
+    left: 602px;
+    top: 182px;
+} 
