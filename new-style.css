@@ -7,6 +7,10 @@ body {
     max-width: 100%;
 }
 
+h3, p {
+    color: white;
+}
+
 .top {
     /* background: linear-gradient(90deg, #4742BC 0%, #E05CB3 81.77%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -84,4 +88,93 @@ body {
     background: #E05CB3;
     color: white;
     margin-top: 10px;
+}
+
+.features {
+    background: #4742BC;
+    width: 100%;
+    height: 784px;
+}
+
+.feature-header {
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 59px;
+    letter-spacing: 0.035em;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.feature-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.column-one {
+    width: 30%;
+    flex-direction: column;
+}
+
+.column-two {
+    width: 35%;
+}
+
+.feature-img {
+    width: 100%;
+}
+
+.column-three {
+    width: 30%;
+    flex-direction: column;
+}
+
+.feature {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.row-one {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.row-two {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+}
+
+.row-two p {
+    margin-top: -20px;
+}
+
+.mission {
+    background: #FC5454;
+}
+
+.progress {
+    background: #27AE60; 
+}
+
+.evolution {
+    background: #9B51E0;
+}
+
+.secure {
+    background: #FC54EB;
+}
+
+.points {
+    background: #1575FF;
+}
+
+.success {
+    background: #FFA25F;
 }
