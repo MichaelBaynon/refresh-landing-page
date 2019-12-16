@@ -14,7 +14,7 @@ body {
 
 .intro {
   padding: 10px;
-  margin: 10px;
+  margin: 10px auto;
   /* border: solid green; */
   display: flex;
   flex-direction: column;
@@ -23,14 +23,12 @@ body {
   align-items: center;
   width: fit-content;
   border-bottom: 2px solid white;
-  
- 
 }
 
 .intro p {
   display: flex;
-  width: 40%;
-  
+  width: 50%;
+  justify-content: center;
 }
 
 p {
@@ -51,14 +49,14 @@ p {
   text-decoration: none;
   font-size: 18px;
   transition: 0.4s;
-  
 }
 
 .nav-buttons a:hover {
   color: #4088f0;
 }
 
-.get-started:hover {
+.get-started:hover,
+.continue-reading:hover {
   background: #28c96c;
 }
 
@@ -88,7 +86,7 @@ a {
   align-content: center;
   align-items: center;
   padding-top: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .copy img {
@@ -130,6 +128,20 @@ a {
   transition: 0.4s;
 }
 
+.continue-reading {
+  background: #4088f0;
+  width: fit-content;
+  color: white;
+  border-radius: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
 .center {
   margin: 40px auto;
 }
@@ -157,7 +169,8 @@ a {
 }
 
 .about,
-.features {
+.features,
+.blog {
   display: flex;
   margin: 0 auto;
   width: fit-content;
@@ -168,7 +181,8 @@ a {
 }
 
 .about h1,
-.features h1 {
+.features h1,
+.blog h1 {
   font-size: 40px;
 }
 
@@ -186,7 +200,8 @@ h2 {
 }
 
 .about p,
-.features p {
+.features p,
+.blog p {
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 40px;
@@ -196,6 +211,37 @@ h2 {
   margin-left: 30px;
   display: flex;
   flex-direction: column;
+}
+
+.post-title {
+  width: 90vw;
+  text-align: center;
+}
+
+.post-feature {
+  margin: 20px auto 0 auto;
+  max-width: 90vw;
+  max-height: 80vh;
+}
+
+.post-text {
+  width: 90vw;
+  line-height: 1.5;
+}
+
+.post-header {
+  width: 100%;
+  margin: 0 auto 20px auto;
+  text-align: left;
+  font-size: 2.5em;
+}
+
+.post-paragraph {
+  font-size: 1.5em;
+}
+
+.post-link, .post-close {
+  color: #4088f0;
 }
 
 @media screen and (max-width: 1180px) {

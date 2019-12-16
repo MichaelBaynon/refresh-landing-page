@@ -1,0 +1,275 @@
+/* This will replace style.css after I get it to match UX */
+
+html {
+    max-width: 100%;
+}
+
+body {
+    font-family: Catamaran;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h3, p {
+    color: white;
+}
+
+.nav {
+    background: #4742BC;
+    width: 100%;
+    height: 86px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+.vector {
+    width: 100%;
+}
+
+.images {
+    position: relative;
+}
+
+.mobile {
+    position: absolute;
+    left: 870px;
+    top: 76px;
+} 
+
+.desktop {
+    position: absolute;
+    left: 550px;
+    top: 182px;
+} 
+
+.text {
+    color: white;
+    top: 120px;
+    left: 160px;
+    position: absolute;
+}
+
+.description {
+    width: 40%;
+    line-height: 28px;
+    align-items: center;
+    letter-spacing: 0.04em;
+}
+
+.download {
+    width: 103px;
+    height: 37px;
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.035em;
+    background: #E05CB3;
+    color: white;
+    margin-top: 10px;
+}
+
+.features {
+    background: #4742BC;
+    width: 100%;
+    height: 784px;
+}
+
+.feature-header {
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 59px;
+    letter-spacing: 0.035em;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.feature-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.column-one {
+    width: 30%;
+    flex-direction: column;
+}
+
+.column-two {
+    width: 35%;
+}
+
+.feature-img {
+    width: 100%;
+}
+
+.column-three {
+    width: 30%;
+    flex-direction: column;
+}
+
+.feature {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.row-one {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.row-two {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+}
+
+.row-two p {
+    margin-top: -20px;
+}
+
+.mission {
+    background: #FC5454;
+}
+
+.progress {
+    background: #27AE60; 
+}
+
+.evolution {
+    background: #9B51E0;
+}
+
+.secure {
+    background: #FC54EB;
+}
+
+.points {
+    background: #1575FF;
+}
+
+.success {
+    background: #FFA25F;
+}
+
+@media screen and (max-width: 950px) {
+    .vector {
+        max-width: 100%;
+    }
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        margin-bottom: -40px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .description {
+        width: 100%;
+    }
+    .desktop {
+        left: 500;
+        height: 50%;
+    }
+    .text {
+        top: 80;
+        left: 20;
+    }
+    .features {
+        height: fit-content;
+    }
+    .feature-columns {
+        flex-direction: column;
+        width: 100%;
+    }
+    .column-one, .column-two, .column-three {
+        width: 75%;
+        margin: 20px auto;
+    }
+    .feature-img {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .text h2 {
+        font-size: 1em;
+    }
+    .desktop {
+        left: 400;
+        top: 150;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .nav {
+        flex-direction: column;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        max-width: 100%;
+    }
+    .text h2 {
+        padding-top: 20px;
+    }
+    .desktop {
+        left: 300;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .desktop {
+        left: 300;
+        top: 130;
+    }
+
+    .description {
+        line-height: 20px;
+    }
+
+    .nav {
+        font-size: 0.85em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .vector {
+        height: 46%;
+    }
+    .desktop {
+        left: 140;
+        top: 160;
+    }
+    .hide {
+        display: block;
+    }
+    .feature {
+        margin-bottom: 20px;
+    }
+    .feature-img {
+        height: 50vh;
+    }
+}
