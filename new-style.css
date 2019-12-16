@@ -228,6 +228,9 @@ h3, p {
     .text h2 {
         padding-top: 20px;
     }
+    .desktop {
+        left: 300;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -238,5 +241,10 @@ h3, p {
 
     .description {
         line-height: 20px;
+    }
+
+    .nav {
+        font-size: 0.85em;
+        padding-left: 20px;
     }
 }
