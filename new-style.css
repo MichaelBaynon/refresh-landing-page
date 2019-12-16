@@ -1,14 +1,14 @@
 /* This will replace style.css after I get it to match UX */
 
 html {
-    width: 100%;
+    max-width: 100%;
 }
 
 body {
     font-family: Catamaran;
     margin: 0;
     padding: 0;
-    max-width: 100%;
+    width: 100%;
 }
 
 h3, p {
@@ -44,9 +44,12 @@ h3, p {
     margin-right: 40px;
 }
 
+.hide {
+    display: none;
+}
+
 .vector {
-    width: 100vw;
-    z-index: -1;
+    width: 100%;
 }
 
 .images {
@@ -55,13 +58,13 @@ h3, p {
 
 .mobile {
     position: absolute;
-    left: 925px;
+    left: 870px;
     top: 76px;
 } 
 
 .desktop {
     position: absolute;
-    left: 602px;
+    left: 550px;
     top: 182px;
 } 
 
@@ -202,13 +205,14 @@ h3, p {
         left: 500;
         height: 50%;
     }
-}
-
-@media screen and (max-width: 700px) {
     .text {
         top: 80;
         left: 20;
     }
+}
+
+@media screen and (max-width: 700px) {
+    
     .text h2 {
         font-size: 1em;
     }
@@ -245,7 +249,6 @@ h3, p {
 
     .nav {
         font-size: 0.85em;
-        padding-left: 20px;
     }
 }
 
@@ -257,5 +260,8 @@ h3, p {
     .desktop {
         left: 140;
         top: 160;
+    }
+    .hide {
+        display: block;
     }
 }
