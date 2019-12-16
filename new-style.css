@@ -248,3 +248,14 @@ h3, p {
         padding-left: 20px;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .vector {
+        height: 46%;
+        min-width: 106%;
+    }
+    .desktop {
+        left: 140;
+        top: 160;
+    }
+}
