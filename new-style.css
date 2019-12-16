@@ -34,7 +34,6 @@ h3, p {
     color: white;
 }
 
-
 .menu a {
     text-decoration: none;
     color: white;
@@ -42,7 +41,7 @@ h3, p {
 }
 
 .vector {
-    width: 100%;
+    width: 100vw;
     z-index: -1;
 }
 
@@ -177,4 +176,16 @@ h3, p {
 
 .success {
     background: #FFA25F;
+}
+
+@media screen and (max-width: 950px) {
+    .vector {
+        max-width: 100%;
+    }
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        margin-bottom: -40px;
+    }
 }
