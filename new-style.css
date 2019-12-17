@@ -32,6 +32,11 @@ h3, p {
     text-decoration: none;
     color: white;
     margin-right: 40px;
+    transition: 0.6s;
+}
+
+.menu a:hover {
+    color:  #E05CB3;
 }
 
 .hide {
@@ -84,6 +89,13 @@ h3, p {
     background: #E05CB3;
     color: white;
     margin-top: 10px;
+    transition: 0.6s;
+}
+
+.download:hover {
+    background: white;
+    color: #E05CB3;
+    cursor: pointer;
 }
 
 .features {
