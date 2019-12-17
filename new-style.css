@@ -246,6 +246,60 @@ h3, p {
     margin-top: 0;
 }
 
+.blog {
+    height: 600px;
+    background: #1575FF;
+}
+
+.blog-header {
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 59px;
+    letter-spacing: 0.035em;
+    padding-top: 40px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.post {
+    display: flex;
+    justify-content: space-around;
+}
+
+.post-image {
+    width: 100%;
+    height: 100%;
+}
+
+.preview {
+    flex-direction: column;
+    color: white;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.continue-reading {
+    width: 200px;
+    height: 37px;
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.035em;
+    background: #E05CB3;
+    color: white;
+    margin-top: 0;
+    transition: 0.6s;
+  }
+
+  .continue-reading:hover {
+    background: white;
+    color: #E05CB3;
+    cursor: pointer;
+  }
+
 @media screen and (max-width: 950px) {
     .vector {
         max-width: 100%;
