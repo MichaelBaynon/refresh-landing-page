@@ -366,6 +366,9 @@ h3, p {
 }
 
 @media screen and (max-width: 800px) {
+    .team-header, .feature-header, .blog-header {
+        line-height: 40px;
+    }
     .contributors {
         grid-template-columns: auto auto auto auto;
     }
