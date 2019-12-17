@@ -225,6 +225,15 @@ h3, p {
     height: 150px;
 }
 
+.social {
+    margin: 0 auto;
+}
+
+.social a {
+    color: #B075E6; 
+    /* Weird underscore appearing between social icons, easier to set make it invisible than figure out why and debug */
+}
+
 .name {
     text-align: center;
 }
@@ -246,6 +255,12 @@ h3, p {
     }
     .desktop {
         margin-bottom: -40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .team {
+        height: 750px;
     }
 }
 
@@ -275,6 +290,9 @@ h3, p {
     .feature-img {
         height: fit-content;
     }
+    .team {
+        height: 800px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -282,7 +300,7 @@ h3, p {
         grid-template-columns: auto auto auto auto;
     }
     .team {
-        height: 1000px;
+        height: 1200px;
     }
 }
 
@@ -313,7 +331,7 @@ h3, p {
         grid-template-columns: auto auto auto;
     }
     .team {
-        height: 1200px;
+        height: 1400px;
     }
 }
 
@@ -337,7 +355,7 @@ h3, p {
         grid-template-columns: auto auto;
     }
     .team {
-        height: 1500px;
+        height: 1700px;
     }
 }
 
@@ -368,6 +386,6 @@ h3, p {
 
 @media screen and (max-width: 350px) {
     .team {
-        height: 1600px;
+        height: 1800px;
     }
 }
