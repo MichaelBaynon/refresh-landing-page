@@ -231,7 +231,7 @@ h3, p {
 
 .social a {
     color: #B075E6; 
-    /* Weird underscore appearing between social icons, easier to set make it invisible than figure out why and debug */
+    /* Weird underscore appearing between social icons, easier to just make it invisible than figure out why and debug */
 }
 
 .name {
