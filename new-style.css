@@ -327,14 +327,14 @@ h3, p {
     .blog {
         height: 600px;
     }
+    .mobile {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 950px) {
     .vector {
         max-width: 100%;
-    }
-    .mobile {
-        display: none;
     }
     .desktop {
         margin-bottom: -40px;
