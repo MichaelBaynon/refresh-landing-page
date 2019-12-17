@@ -89,7 +89,7 @@ h3, p {
 .features {
     background: #4742BC;
     width: 100%;
-    height: 784px;
+    height: 650px;
 }
 
 .feature-header {
@@ -173,6 +173,37 @@ h3, p {
 
 .success {
     background: #FFA25F;
+}
+
+.team {
+    height: 700px;
+    background: #B075E6;
+}
+
+.team-header {
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 59px;
+    letter-spacing: 0.035em;
+    margin-top: 0;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.individual {
+    display: flex;
+}
+
+.individual img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.individualTitle h4 {
+    color: white;
+    margin-top: 0;
 }
 
 @media screen and (max-width: 950px) {
