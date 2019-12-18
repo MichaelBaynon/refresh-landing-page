@@ -472,6 +472,9 @@ h3, p {
     .mobile {
         display: none;
     }
+    .desktop {
+        left: 250;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -479,8 +482,8 @@ h3, p {
         height: 46%;
     }
     .desktop {
-        left: 150;
-        top: 160;
+        left: 230;
+        top: 130;
     }
     .hide {
         display: block;
@@ -494,8 +497,11 @@ h3, p {
 }
 
 @media screen and (max-width: 400px) {
+    .text p {
+        font-size: 0.9em;
+    }
     .desktop {
-        left: 120;
+        /* left: 130; */
         height: 40%;
     }
     .blog {
@@ -505,7 +511,13 @@ h3, p {
 
 @media screen and (max-width: 375px) {
     .desktop {
-        left: 140;
+        left: 230;
+    }
+    .text p {
+        font-size: 0.85em;
+    }
+    .text h2 {
+        font-size: 0.9em;
     }
 }
 
