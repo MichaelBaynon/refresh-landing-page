@@ -1,316 +1,520 @@
+html {
+    max-width: 100%;
+    scroll-behavior: smooth;
+}
+
 body {
-  font-family: Catamaran;
-  font-weight: 400;
-  background: rgb(20, 20, 20);
-  color: white;
-  line-height: 1.25;
-  margin: 0;
+    font-family: Catamaran;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-* {
-  font-family: Catamaran;
-  font-weight: 400;
-}
-
-.intro {
-  padding: 10px;
-  margin: 10px auto;
-  /* border: solid green; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: fit-content;
-  border-bottom: 2px solid white;
-}
-
-.intro p {
-  display: flex;
-  width: 50%;
-  justify-content: center;
-}
-
-p {
-  font-size: 16px;
+h3, p {
+    color: white;
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  background-color: rgb(12, 12, 12);
+    background: #4742BC;
+    width: 100%;
+    height: 86px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.nav-buttons a,
-.get-started a {
-  margin: 30px;
-  text-decoration: none;
-  font-size: 18px;
-  transition: 0.4s;
+.logo {
+    color: white;
 }
 
-.nav-buttons a:hover {
-  color: #4088f0;
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+    transition: 0.6s;
 }
 
-.get-started:hover,
-.continue-reading:hover {
-  background: #28c96c;
+.menu a:hover {
+    color:  #E05CB3;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-  
+.hide {
+    display: none;
 }
 
-.refresh {
-  font-size: 28px;
-  padding-left: 30px;
-  font-weight: 600;
+.vector {
+    width: 100%;
 }
 
-.content {
-  width: 80%;
-  margin: 0 auto;
+.images {
+    position: relative;
 }
 
-.copy {
-  border-bottom: 2px solid white;
-  width: fit-content;
-  margin:  0 auto;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
+.mobile {
+    position: absolute;
+    left: 920px;
+    top: 76px;
+} 
 
-.copy img {
-  border-radius: 5px;
-  border: solid 1px black;
-  box-shadow: 1px 1px 5px black;
-}
+.desktop {
+    position: absolute;
+    left: 600px;
+    top: 182px;
+} 
 
 .text {
-  margin-left: 80px;
+    color: white;
+    top: 120px;
+    left: 160px;
+    position: absolute;
 }
 
-.image {
-  align-items: center;
-  
+.description {
+    width: 40%;
+    line-height: 28px;
+    align-items: center;
+    letter-spacing: 0.04em;
 }
 
-.content h1 {
-  margin-bottom: 1px;
-  font-weight: 600;
+.download {
+    width: 103px;
+    height: 37px;
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.035em;
+    background: #E05CB3;
+    color: white;
+    margin-top: 10px;
+    transition: 0.6s;
 }
 
-.get-started {
-  margin-top: 20px;
-  background: #4088f0;
-  width: fit-content;
-  color: white;
-  border-radius: 5px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  font-size: 20px;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  transition: 0.4s;
+.download:hover {
+    background: white;
+    color: #E05CB3;
+    cursor: pointer;
 }
 
-.continue-reading {
-  background: #4088f0;
-  width: fit-content;
-  color: white;
-  border-radius: 5px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  font-size: 20px;
-  text-decoration: none;
-  transition: 0.4s;
+.features {
+    background: #4742BC;
+    width: 100%;
+    height: 650px;
 }
 
-.center {
-  margin: 40px auto;
+.feature-header {
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 59px;
+    letter-spacing: 0.035em;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.feature-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.column-one {
+    width: 30%;
+    flex-direction: column;
+}
+
+.column-two {
+    width: 35%;
+}
+
+.feature-img {
+    width: 100%;
+}
+
+.column-three {
+    width: 30%;
+    flex-direction: column;
+}
+
+.feature {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.row-one {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.row-two {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+}
+
+.row-two p {
+    margin-top: -20px;
+}
+
+.mission {
+    background: #FC5454;
+}
+
+.progress {
+    background: #27AE60; 
+}
+
+.evolution {
+    background: #9B51E0;
+}
+
+.secure {
+    background: #FC54EB;
+}
+
+.points {
+    background: #1575FF;
+}
+
+.success {
+    background: #FFA25F;
 }
 
 .team {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  margin: 0 auto;
+    height: 700px;
+    background: #B075E6;
 }
 
-.individual {
-  display: flex;
-  border: solid 1px black;
-  margin: 20px;
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px black;
-}
-
-.individual img {
-  border-radius: 5px;
-  border: solid 1px black;
-  box-shadow: 1px 1px 5px black;
-}
-
-.about,
-.features,
-.blog {
-  display: flex;
-  margin: 0 auto;
-  width: fit-content;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-
-.about h1,
-.features h1,
-.blog h1 {
-  font-size: 40px;
-}
-
-.features h2 {
-  font-size: 30px;
-}
-
-h2 {
-  
-  margin: 0 auto;
-  padding-top: 35px;
-  display: flex;
-  
-  width: fit-content;
-}
-
-.about p,
-.features p,
-.blog p {
-  font-size: 20px;
-  margin-top: 0px;
-  margin-bottom: 40px;
-}
-
-.individualTitle {
-  margin-left: 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-.post-title {
-  width: 90vw;
-  text-align: center;
-}
-
-.post-feature {
-  margin: 20px auto 0 auto;
-  max-width: 90vw;
-  max-height: 80vh;
-}
-
-.post-text {
-  width: 90vw;
-  line-height: 1.5;
-}
-
-.post-header {
-  width: 100%;
-  margin: 0 auto 20px auto;
-  text-align: left;
-  font-size: 2.5em;
-}
-
-.post-paragraph {
-  font-size: 1.5em;
-}
-
-.post-link, .post-close {
-  color: #4088f0;
-}
-
-@media screen and (max-width: 1180px) {
-  body {
-    max-width: 100%;
-  }
-  h1 {
-    font-size: 25px;
-  }
-  h2 {
+.team-header {
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 59px;
+    letter-spacing: 0.035em;
+    margin-top: 0;
+    padding-top: 40px;
     text-align: center;
-  }
-  .intro {
-    text-align: center;
- 
-  }
-  .intro p {
-    width: 100%;
-  }
-  .copy {
-    flex-direction: column;
-    justify-content: center;
-    max-width: 100%;
-  }
-  .image {
+}
+
+.contributors {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 0 auto;
+}
+
+.contributor {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-  }
-  .text {
-    min-width: 100%;
-    text-align: center;
+    justify-content: center;
+}
+
+.photo {
     margin: 0 auto;
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.social {
+    margin: 0 auto;
+}
+
+.social a {
+    color: #B075E6; 
+    /* Weird underscore appearing between social icons, easier to just make it invisible than figure out why and debug */
+}
+
+.name {
+    text-align: center;
+}
+
+.name h3 {
+    margin-bottom: 0;
+}
+
+.name p {
+    margin-top: 0;
+}
+
+.blog {
+    height: 450px;
+    background: #1575FF;
+}
+
+.blog-header {
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 59px;
+    letter-spacing: 0.035em;
+    padding-top: 40px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.post {
+    display: flex;
+    justify-content: space-around;
+}
+
+.post-image {
     width: fit-content;
+    height: fit-content;
+}
+
+.preview {
+    flex-direction: column;
+    color: white;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.continue-reading {
+    width: 200px;
+    height: 37px;
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.035em;
+    background: #E05CB3;
+    color: white;
+    margin-top: -10px;
+    transition: 0.6s;
   }
-  .get-started {
-    font-size: 18px;
-    margin: 20px auto;
+
+  .continue-reading:hover {
+    background: white;
+    color: #E05CB3;
+    cursor: pointer;
   }
+
+  .footer {
+    background: #4742BC;
+    width: 100%;
+    height: 40px;
+    margin-top: 0 auto;
+    padding: 5px 0 15px 0;
+  }
+
+  .footer p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+@media screen and (max-width: 1050px) {
+    .post {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .blog {
+        height: 600px;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .vector {
+        max-width: 100%;
+    }
+    .desktop {
+        left: 550;
+        margin-bottom: -40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .team {
+        height: 750px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .description {
+        width: 100%;
+    }
+    .desktop {
+        left: 300;
+        height: 50%;
+    }
+    .mobile {
+        display: inline-block;
+        left: 600;
+        top: 182;
+        height: 50%;
+    }
+    .text {
+        top: 80;
+        left: 20;
+    }
+    .features {
+        height: fit-content;
+    }
+    .feature-columns {
+        flex-direction: column;
+        width: 100%;
+    }
+    .column-one, .column-two, .column-three {
+        width: 75%;
+        margin: 20px auto;
+    }
+    .feature-img {
+        height: fit-content;
+    }
+    .team {
+        height: 750px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .team-header, .feature-header, .blog-header {
+        line-height: 40px;
+    }
+    .contributors {
+        grid-template-columns: auto auto auto auto;
+    }
+    .team {
+        height: 1100px;
+    }
+    .blog {
+        height: 700px;
+    }
 }
 
 @media screen and (max-width: 700px) {
-  .nav {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-  }
-  
-  .nav-buttons {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .nav-buttons a {
-    max-width: 100%;
-  }
-  
-  .individual {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .photo {
-    margin-left: 30px;
-  }
-
-  @media screen and (max-width: 575px) {
-    .nav-buttons a {
-      font-size: 18px;
+    .text h2 {
+        font-size: 1em;
     }
-  }
+    .text p {
+        margin-right: 20px;
+    }
+    .desktop {
+        left: 200;
+        top: 150;
+    }
+    .mobile {
+        left: 450;
+        top: 150;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .nav {
+        flex-direction: column;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        max-width: 100%;
+    }
+    .text h2 {
+        padding-top: 20px;
+    }
+    .desktop {
+        left: 200;
+    }
+    .mobile {
+        left: 450;
+    }
+    .contributors {
+        grid-template-columns: auto auto auto;
+    }
+    .team {
+        height: 1300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .desktop {
+        left: 200;
+        top: 130;
+    }
+
+    .mobile {
+        left: 450;
+        top: 130;
+    }
+
+    .description {
+        line-height: 20px;
+    }
+
+    .nav {
+        font-size: 0.85em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mobile {
+        left: 400;
+    }
+    .contributors {
+        grid-template-columns: auto auto;
+    }
+    .team {
+        height: 1600px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .vector {
+        height: 46%;
+    }
+    .desktop {
+        left: 150;
+        top: 160;
+    }
+    .hide {
+        display: block;
+    }
+    .feature {
+        margin-bottom: 20px;
+    }
+    .feature-img {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .desktop {
+        left: 120;
+        height: 40%;
+    }
+    .blog {
+        height: 800px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .desktop {
+        left: 140;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .team {
+        height: 1800px;
+    }
+    .post-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
 }
