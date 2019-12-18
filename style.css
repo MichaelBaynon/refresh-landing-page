@@ -519,6 +519,9 @@ h3, p {
     .text h2 {
         font-size: 0.9em;
     }
+    .download {
+        height: 34px;
+    }
 }
 
 @media screen and (max-width: 350px) {
