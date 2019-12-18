@@ -52,13 +52,13 @@ h3, p {
 
 .mobile {
     position: absolute;
-    left: 870px;
+    left: 920px;
     top: 76px;
 } 
 
 .desktop {
     position: absolute;
-    left: 550px;
+    left: 600px;
     top: 182px;
 } 
 
@@ -332,6 +332,7 @@ h3, p {
         max-width: 100%;
     }
     .desktop {
+        left: 550;
         margin-bottom: -40px;
     }
 }
@@ -347,7 +348,13 @@ h3, p {
         width: 100%;
     }
     .desktop {
-        left: 500;
+        left: 300;
+        height: 50%;
+    }
+    .mobile {
+        display: inline-block;
+        left: 600;
+        top: 182;
         height: 50%;
     }
     .text {
@@ -392,8 +399,15 @@ h3, p {
     .text h2 {
         font-size: 1em;
     }
+    .text p {
+        margin-right: 20px;
+    }
     .desktop {
-        left: 400;
+        left: 200;
+        top: 150;
+    }
+    .mobile {
+        left: 450;
         top: 150;
     }
 }
@@ -409,7 +423,10 @@ h3, p {
         padding-top: 20px;
     }
     .desktop {
-        left: 300;
+        left: 200;
+    }
+    .mobile {
+        left: 450;
     }
     .contributors {
         grid-template-columns: auto auto auto;
@@ -421,7 +438,12 @@ h3, p {
 
 @media screen and (max-width: 600px) {
     .desktop {
-        left: 300;
+        left: 200;
+        top: 130;
+    }
+
+    .mobile {
+        left: 450;
         top: 130;
     }
 
@@ -435,6 +457,9 @@ h3, p {
 }
 
 @media screen and (max-width: 550px) {
+    .mobile {
+        left: 400;
+    }
     .contributors {
         grid-template-columns: auto auto;
     }
@@ -443,12 +468,18 @@ h3, p {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .mobile {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .vector {
         height: 46%;
     }
     .desktop {
-        left: 140;
+        left: 150;
         top: 160;
     }
     .hide {
@@ -465,9 +496,16 @@ h3, p {
 @media screen and (max-width: 400px) {
     .desktop {
         left: 120;
+        height: 40%;
     }
     .blog {
         height: 800px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .desktop {
+        left: 140;
     }
 }
 
