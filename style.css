@@ -508,6 +508,14 @@ h3, p {
     .desktop {
         left: 250;
     }
+    .menu {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .menu a {
+        margin-right: 0;
+        padding: 0 32px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -537,7 +545,7 @@ h3, p {
         font-size: 0.9em;
     }
     .desktop {
-        left: 150;
+        left: 170;
     }
     .row-one {
         width: 15px;
