@@ -313,6 +313,25 @@ h3, p {
     text-align: center;
   }
 
+@media screen and (min-width: 1500px) {
+    .desktop, .mobile {
+        padding-left: 100px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .desktop, .mobile {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .mobile {
+        left: 960;
+    }
+}
+
 @media screen and (max-width: 1050px) {
     .post {
         flex-direction: column;
