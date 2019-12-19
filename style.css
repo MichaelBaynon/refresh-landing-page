@@ -279,6 +279,10 @@ h3, p {
     line-height: 1.2;
 }
 
+.blog-link {
+    text-decoration: none;
+}
+
 .continue-reading {
     width: 200px;
     height: 37px;
@@ -312,6 +316,105 @@ h3, p {
     font-size: 16px;
     text-align: center;
   }
+
+  .post-header {
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 59px;
+    letter-spacing: 0.035em;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.post-subheader {
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 0.035em;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.post-feature {
+    display: block;
+    width: 60vw;
+    margin: 20px auto;
+}
+
+.post-body {
+    margin-top: -25px;
+    margin-bottom: -25px;
+    max-width: 100%;
+}
+
+.post-background-1 {
+    background: #B075E6;
+    height: fit-content;
+}
+
+.post-background-2 {
+    background: #4742BC;
+    height: fit-content;
+    margin-top: -25px;
+    margin-bottom: -25px;
+}
+
+.post-background-3 {
+    background: #1575FF;
+    height: fit-content;
+    margin-top: -25px;
+    margin-bottom: -25px;
+}
+
+.post-intro {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.post-paragraph {
+    font-size: 1.2em;
+    line-height: 1.2;
+    padding: 0 20px 20px 20px;
+}
+
+.post-link {
+    color: #FFA25F;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+.post-link:visited {
+    text-decoration: underline;
+}
+
+.download-blog {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.035em;
+    background: #E05CB3;
+    color: white;
+    margin: 30px auto -30px auto;
+    transition: 0.6s;
+    display: block;
+}
+
+.download-blog:hover {
+    background: white;
+    color: #E05CB3;
+    cursor: pointer;
+}
 
 @media screen and (min-width: 1500px) {
     .desktop, .mobile {
