@@ -496,8 +496,9 @@ h3, p {
         height: 46%;
     }
     .desktop {
-        left: 230;
-        top: 130;
+        left: 210;
+        top: 140;
+        height: 30%;
     }
     .feature {
         margin-bottom: 20px;
@@ -517,7 +518,7 @@ h3, p {
         font-size: 0.9em;
     }
     .desktop {
-        height: 40%;
+        /* height: 40%; */
     }
     .row-one {
         width: 15px;
