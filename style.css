@@ -147,9 +147,10 @@ h3, p {
 
 .row-one {
     width: 54px;
-    height: 54px;
+    height: 40px;
     border-radius: 50%;
     margin-right: 20px;
+    padding: 0;
 }
 
 .row-two {
@@ -312,6 +313,25 @@ h3, p {
     text-align: center;
   }
 
+@media screen and (min-width: 1500px) {
+    .desktop, .mobile {
+        padding-left: 100px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .desktop, .mobile {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .mobile {
+        left: 960;
+    }
+}
+
 @media screen and (max-width: 1050px) {
     .post {
         flex-direction: column;
@@ -327,12 +347,18 @@ h3, p {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .row-one {
+        height: 30px;
+    }
+}
+
 @media screen and (max-width: 950px) {
     .vector {
         max-width: 100%;
     }
     .desktop {
-        left: 550;
+        left: 535;
         margin-bottom: -40px;
     }
 }
@@ -367,6 +393,9 @@ h3, p {
     .feature-columns {
         flex-direction: column;
         width: 100%;
+    }
+    .row-one {
+        height: 54px;
     }
     .column-one, .column-two, .column-three {
         width: 75%;
@@ -460,6 +489,10 @@ h3, p {
     .mobile {
         left: 400;
     }
+    .row-one {
+        height: 25px;
+        width: 25px
+    }
     .contributors {
         grid-template-columns: auto auto;
     }
@@ -472,6 +505,17 @@ h3, p {
     .mobile {
         display: none;
     }
+    .desktop {
+        left: 250;
+    }
+    .menu {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .menu a {
+        margin-right: 0;
+        padding: 0 32px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -479,11 +523,9 @@ h3, p {
         height: 46%;
     }
     .desktop {
-        left: 150;
-        top: 160;
-    }
-    .hide {
-        display: block;
+        left: 210;
+        top: 140;
+        height: 30%;
     }
     .feature {
         margin-bottom: 20px;
@@ -491,12 +533,24 @@ h3, p {
     .feature-img {
         height: 50vh;
     }
+    .row-one {
+        width: 15px;
+        height: 15px;
+        margin-top: 5px;
+    }
 }
 
 @media screen and (max-width: 400px) {
+    .text p {
+        font-size: 0.9em;
+    }
     .desktop {
-        left: 120;
-        height: 40%;
+        left: 170;
+    }
+    .row-one {
+        width: 15px;
+        height: 12px;
+        margin-top: 6px;
     }
     .blog {
         height: 800px;
@@ -504,8 +558,14 @@ h3, p {
 }
 
 @media screen and (max-width: 375px) {
-    .desktop {
-        left: 140;
+    .text p {
+        font-size: 0.85em;
+    }
+    .text h2 {
+        font-size: 0.9em;
+    }
+    .download {
+        height: 34px;
     }
 }
 
