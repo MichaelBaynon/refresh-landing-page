@@ -393,6 +393,10 @@ h3, p {
     text-decoration: underline;
 }
 
+.download-link {
+    text-decoration: none;
+}
+
 .download-blog {
     width: fit-content;
     height: fit-content;
