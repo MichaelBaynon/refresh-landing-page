@@ -21,25 +21,10 @@ h3, p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1;
 }
 
 .logo {
-    
-    
-    font-size: 1.5rem;
-}
-
-.logo a {
-    text-decoration: none;
     color: white;
-    transition: .3s;
-}
-
-.logo a:hover {
-    color: #E05CB3;
 }
 
 .menu a {
@@ -47,7 +32,6 @@ h3, p {
     color: white;
     margin-right: 40px;
     transition: 0.6s;
-    font-size: 1.3rem;
 }
 
 .menu a:hover {
@@ -93,22 +77,18 @@ h3, p {
 }
 
 .download {
-    /* width: 103px;
-    height: 37px; */
-    padding: 10px 15px;
-    
+    width: 103px;
+    height: 37px;
     font-family: Catamaran;
     font-style: normal;
-    font-weight: normal;
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 14px;
     line-height: 23px;
     letter-spacing: 0.035em;
     background: #E05CB3;
     color: white;
     margin-top: 10px;
     transition: 0.6s;
-    border: none;
-    border-radius: 5px;
 }
 
 .download:hover {
@@ -290,8 +270,6 @@ h3, p {
 .post-image {
     width: fit-content;
     height: fit-content;
-    border-radius: 5px;
-    box-shadow: 1px 2px 5px rgb(59, 59, 59);
 }
 
 .preview {
@@ -318,8 +296,6 @@ h3, p {
     color: white;
     margin-top: -10px;
     transition: 0.6s;
-    border: none;
-    border-radius: 5px;
   }
 
   .continue-reading:hover {
