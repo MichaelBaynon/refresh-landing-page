@@ -96,7 +96,7 @@ h3, p {
     /* width: 103px;
     height: 37px; */
     padding: 10px 15px;
-    box-shadow: 1px 2px 3px rgb(78, 78, 78);
+    
     font-family: Catamaran;
     font-style: normal;
     font-weight: normal;
@@ -320,7 +320,6 @@ h3, p {
     transition: 0.6s;
     border: none;
     border-radius: 5px;
-    box-shadow: 1px 2px 3px rgb(93, 93, 93);
   }
 
   .continue-reading:hover {
